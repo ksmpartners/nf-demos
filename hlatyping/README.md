@@ -5,8 +5,11 @@ This pipeline requires [Nextflow®](https://www.nextflow.io/) 0.7.1 or higher.
 
 # Compute Environment Prerequisites
 Prior to running the pipeline, all of the environments named in [hlatyping.config](./hlatyping.config) must be installed in the local [Domino®](https://domino.ai/) instance.
+Additionally, a [NextFlow with Nextfuse](https://ksmpartners.atlassian.net/wiki/spaces/Nextfuse/pages/2870804483/Installing+Nextfuse#Installing-into-an-Existing-Compute-Environment) compute environment should be available to the user as a Workspace base environment. 
 
-# Running the Pipeline
+# Running the Pipeline in a VS Code Workspace
+Start a Workspace in Domino using the [NextFlow with Nextfuse](https://ksmpartners.atlassian.net/wiki/spaces/Nextfuse/pages/2870804483/Installing+Nextfuse#Installing-into-an-Existing-Compute-Environment) compute environment and open a terminal within.
+
 Prior to running the pipeline, set the following shell variables. This is not strictly necessary, but it does make it easier to read the `nextflow` command provided below.
 ```bash
 # outputdir is the directory parent of the [Nextflow®](https://www.nextflow.io/) work directory. It must be in shared storage, such as a [Domino®](https://domino.ai/) dataset directory or an external data volume.
