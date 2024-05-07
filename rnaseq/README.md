@@ -14,7 +14,7 @@ Start a Workspace in Domino using the [NextFlow with Nextfuse](https://ksmpartne
 
 Right-click the Code section of the VS Code window and add the /mnt directory to the workspace
 
-Open /mnt/imported/code/nf-demos/fetchngs/fetchngs.config
+Open /mnt/imported/code/nf-demos/rnaseq/rnaseq.config
 
 Add the nextfuse version installed in your organization's [NextFlow with Nextfuse](https://ksmpartners.atlassian.net/wiki/spaces/Nextfuse/pages/2870804483/Installing+Nextfuse#Installing-into-an-Existing-Compute-Environment) compute environment like below:
 ```
