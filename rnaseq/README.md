@@ -10,6 +10,19 @@ Additionally, a [NextFlow with Nextfuse](https://ksmpartners.atlassian.net/wiki/
 # Running the Pipeline in a VS Code Workspace
 Start a Workspace in Domino using the [NextFlow with Nextfuse](https://ksmpartners.atlassian.net/wiki/spaces/Nextfuse/pages/2870804483/Installing+Nextfuse#Installing-into-an-Existing-Compute-Environment) compute environment and open a terminal within.
 
+## Configure Plugin Version
+
+Right-click the Code section of the VS Code window and add the /mnt directory to the workspace
+
+Open /mnt/imported/code/nf-demos/rnaseq/rnaseq.config
+
+Add the nextfuse version installed in your organization's [NextFlow with Nextfuse](https://ksmpartners.atlassian.net/wiki/spaces/Nextfuse/pages/2870804483/Installing+Nextfuse#Installing-into-an-Existing-Compute-Environment) compute environment like below:
+```
+plugins {
+  id 'nextfuse@0.12.0'
+}
+```
+
 Prior to running the pipeline, set the following shell variables. This is not strictly necessary, but it does make it easier to read the `nextflow` command provided below.
 ```bash
 # outputdir is the directory parent of the [Nextflow®](https://www.nextflow.io/) work directory. It must be in shared storage, such as a [Domino®](https://domino.ai/) dataset directory or an external data volume.
